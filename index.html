@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amisha Lama | Student Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f8fc;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid #e8e8ee;
+      padding: 16px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-weight: 800; font-size: 1.25rem; }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: .95rem;
+    }
+    nav a:hover { color: #6c5ce7; }
+    header {
+      min-height: 82vh;
+      display: grid;
+      place-items: center;
+      padding: 70px 8%;
+      background: linear-gradient(135deg, #eeeaff, #ffffff 55%, #e9f7ff);
+    }
+    .hero { max-width: 900px; text-align: center; }
+    .tag {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 30px;
+      background: #fff;
+      border: 1px solid #ddd6ff;
+      color: #6355d9;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; margin-bottom: 18px; }
+    .hero h2 { font-size: clamp(1.2rem, 3vw, 1.8rem); color: #555; font-weight: 500; margin-bottom: 18px; }
+    .hero p { max-width: 680px; margin: auto; color: #666; font-size: 1.05rem; }
+    .buttons { margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 5px;
+      font-weight: 700;
+    }
+    .primary { background: #6c5ce7; color: white; }
+    .secondary { background: white; color: #333; border: 1px solid #ddd; }
+    section { padding: 75px 8%; max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: 2rem; margin-bottom: 8px; }
+    .section-title p { color: #777; }
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid #e9e9ef;
+      box-shadow: 0 8px 25px rgba(30,30,60,.05);
+    }
+    .card h3 { margin-bottom: 12px; }
+    .card p { color: #666; }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .skill {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e9e9ef;
+      border-radius: 14px;
+    }
+    .skill strong { display: block; margin-bottom: 5px; }
+    .skill span { color: #777; font-size: .92rem; }
+    .goal {
+      text-align: center;
+      background: #171522;
+      color: white;
+      border-radius: 24px;
+      padding: 45px 25px;
+    }
+    .goal p { color: #d7d4e2; max-width: 650px; margin: 12px auto 0; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #171522;
+      color: #aaa;
+      font-size: .9rem;
+    }
+    @media (max-width: 700px) {
+      nav { padding: 14px 5%; }
+      nav div:last-child { display: none; }
+      section { padding: 55px 5%; }
+      .about, .skills { grid-template-columns: 1fr; }
+      header { padding: 60px 5%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Amisha Lama</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#goals">Goals</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <div class="tag">Student Portfolio</div>
+      <h1>Hi, I'm Amisha 👋</h1>
+      <h2>IBM Student at Dong-A University</h2>
+      <p>
+        Welcome to my student portfolio. I enjoy learning new things,
+        developing useful skills, and discovering new opportunities.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#about">Explore My Portfolio</a>
+        <a class="btn secondary" href="#goals">My Goals</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>A little introduction</p>
+    </div>
+    <div class="about">
+      <div class="card">
+        <h3>🎓 Education</h3>
+        <p>
+          I am an IBM (International Business Management) student at
+          Dong-A University. I am interested in learning about business,
+          technology, communication, and the skills needed for the future.
+        </p>
+      </div>
+      <div class="card">
+        <h3>🌱 My Personality</h3>
+        <p>
+          I am curious and open to learning. I like trying new things,
+          improving myself step by step, and gaining practical experience
+          from new challenges.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">
+      <h2>My Skills</h2>
+      <p>Skills I am developing through study and experience</p>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <strong>💬 Communication</strong>
+        <span>Enjoy communicating and connecting with people.</span>
+      </div>
+      <div class="skill">
+        <strong>⌨️ Typing & Writing</strong>
+        <span>Comfortable with typing, writing, and organizing information.</span>
+      </div>
+      <div class="skill">
+        <strong>🌏 Language Learning</strong>
+        <span>Interested in learning languages and improving communication skills.</span>
+      </div>
+      <div class="skill">
+        <strong>💡 Creativity</strong>
+        <span>Enjoy creating ideas and exploring different ways to solve problems.</span>
+      </div>
+      <div class="skill">
+        <strong>🔄 Adaptability</strong>
+        <span>Willing to learn and adapt to new environments and situations.</span>
+      </div>
+      <div class="skill">
+        <strong>🧩 Problem Solving</strong>
+        <span>Like finding practical solutions and learning from challenges.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals">
+    <div class="goal">
+      <h2>My Goal 🎯</h2>
+      <p>
+        My goal is to keep learning new things, build useful skills,
+        gain meaningful experiences, and grow both personally and
+        professionally. I want to stay curious and make the most of
+        every opportunity to learn.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Amisha Lama · Student Portfolio
+  </footer>
+
+</body>
+</html>
