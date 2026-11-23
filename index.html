@@ -1,243 +1,337 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amisha Lama | Personal Portfolio</title>
+<title>Amisha Lama | Creative Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --cream:#fffaf3;
-  --pink:#f5dfe0;
-  --rose:#ce8795;
-  --dark:#49383b;
-  --muted:#88777a;
-  --white:#fff;
-  --line:#f0e3df;
+  --cream: #fffaf3;
+  --pink: #f4d9d9;
+  --rose: #d88f9b;
+  --dark: #443638;
+  --muted: #857477;
+  --white: #ffffff;
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:'DM Sans',sans-serif;
-  background:var(--cream);
-  color:var(--dark);
-  line-height:1.75;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{color:inherit}
 
-nav{
-  position:sticky;top:0;z-index:100;
-  padding:16px 7%;
-  display:flex;justify-content:space-between;
-  align-items:center;gap:15px;
-  background:#fffaf3ed;
-  backdrop-filter:blur(15px);
-  border-bottom:1px solid var(--line);
-}
-.logo{
-  font-family:'Playfair Display',serif;
-  font-size:1.45rem;font-weight:bold;
-  white-space:nowrap;
-}
-.logo span{color:var(--rose)}
-.nav-links{display:flex;gap:19px;flex-wrap:wrap}
-.nav-links a{
-  text-decoration:none;font-size:.83rem;
-  font-weight:600;transition:.3s;
-}
-.nav-links a:hover{color:var(--rose)}
+html { scroll-behavior: smooth; }
 
-header{
-  min-height:88vh;
-  display:grid;place-items:center;
-  text-align:center;padding:85px 8%;
-  position:relative;overflow:hidden;
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 17px 8%;
+  background: rgba(255,250,243,.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #f0e5df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span { color: var(--rose); }
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 25px;
+  font-size: .9rem;
+  transition: .3s;
+}
+
+nav a:hover { color: var(--rose); }
+
+header {
+  min-height: 88vh;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 15% 20%,#f5dada,transparent 32%),
-    radial-gradient(circle at 90% 80%,#f2e3d9,transparent 32%),
+    radial-gradient(circle at 15% 20%, #f6dddd 0, transparent 30%),
+    radial-gradient(circle at 85% 75%, #f3e5d8 0, transparent 32%),
     var(--cream);
 }
-.hero{max-width:850px;position:relative;z-index:2}
-.tag{
-  display:inline-block;background:white;
-  color:var(--rose);border:1px solid #efd4d5;
-  padding:8px 19px;border-radius:50px;
-  font-size:.78rem;letter-spacing:2px;
-  text-transform:uppercase;font-weight:700;
-}
-h1{
-  font:700 clamp(3.5rem,9vw,7rem)/1.1 'Playfair Display',serif;
-  margin:25px 0;
-}
-h1 span{color:var(--rose);font-style:italic}
-.hero h2{font-size:1.2rem;color:#826c71;font-weight:500}
-.hero p{max-width:650px;margin:20px auto;color:var(--muted)}
-.buttons{margin-top:28px}
-.btn{
-  display:inline-block;padding:13px 25px;
-  border-radius:50px;text-decoration:none;
-  font-weight:700;font-size:.9rem;
-  margin:5px;transition:.3s;
-}
-.primary{background:var(--rose);color:white}
-.secondary{background:white;border:1px solid #e8d1d1}
-.btn:hover{transform:translateY(-4px);box-shadow:0 10px 25px #d88f9b35}
 
-.decor{
-  position:absolute;border-radius:50%;
-  background:#e7b8bf;opacity:.35;
-  animation:float 6s ease-in-out infinite;
+.hero {
+  max-width: 850px;
+  position: relative;
+  z-index: 2;
 }
-.d1{width:140px;height:140px;top:15%;left:8%}
-.d2{width:80px;height:80px;bottom:12%;right:10%;animation-delay:2s}
-@keyframes float{50%{transform:translateY(-18px)}}
 
-section{
-  max-width:1150px;margin:auto;
-  padding:85px 7%;
-  scroll-margin-top:75px;
+.tag {
+  display: inline-block;
+  padding: 8px 19px;
+  background: white;
+  border: 1px solid #efd4d5;
+  border-radius: 50px;
+  color: #b97884;
+  font-size: .85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
-.heading{text-align:center;margin-bottom:42px}
-.heading small{
-  color:var(--rose);font-weight:700;
-  text-transform:uppercase;letter-spacing:3px;
-}
-.heading h2{
-  font:700 clamp(2.2rem,5vw,3.1rem) 'Playfair Display',serif;
-  margin:8px 0;
-}
-.heading p{color:var(--muted)}
 
-.card{
-  background:white;border:1px solid var(--line);
-  padding:30px;border-radius:23px;
-  box-shadow:0 10px 30px #76514c0b;
-  transition:.3s;
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: 1.08;
+  margin-bottom: 20px;
 }
-.card:hover{transform:translateY(-6px);box-shadow:0 15px 35px #76514c17}
-.card h3{
-  font:600 1.4rem 'Playfair Display',serif;
-  margin-bottom:12px;
-}
-.card p{color:var(--muted);font-size:.95rem}
 
-.about,.skills,.projects,.exploring{
-  display:grid;gap:20px;
+h1 span {
+  color: var(--rose);
+  font-style: italic;
 }
-.about{grid-template-columns:repeat(2,1fr)}
-.skills{grid-template-columns:repeat(3,1fr)}
-.exploring{grid-template-columns:repeat(2,1fr)}
-.skill{
-  background:white;border:1px solid var(--line);
-  border-radius:18px;padding:23px;transition:.3s;
-}
-.skill:hover{background:#fae9e9;transform:translateY(-4px)}
-.skill strong{display:block;margin-bottom:7px}
-.skill span{font-size:.9rem;color:var(--muted)}
 
-.journey{
-  max-width:760px;margin:auto;
-  border-left:2px solid #e8bdc3;
-  padding-left:28px;
+.hero h2 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 20px;
 }
-.journey-item{position:relative;margin-bottom:30px}
-.journey-item:before{
-  content:"";position:absolute;
-  width:13px;height:13px;border-radius:50%;
-  background:var(--rose);left:-36px;top:9px;
-}
-.journey-item h3{
-  font:600 1.35rem 'Playfair Display',serif;
-  margin-bottom:5px;
-}
-.journey-item p{color:var(--muted);font-size:.94rem}
 
-.project-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:22px;
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 1.05rem;
 }
-.project{
-  padding:32px;background:white;
-  border:1px solid var(--line);
-  border-radius:25px;transition:.3s;
-}
-.project:hover{transform:translateY(-6px)}
-.project-visual{
-  min-height:150px;border-radius:18px;
-  display:grid;place-items:center;
-  font-size:4rem;margin-bottom:22px;
-}
-.visual-one{background:linear-gradient(135deg,#f5dada,#fff0df)}
-.visual-two{background:linear-gradient(135deg,#e8dfef,#f9e5e5)}
-.project h3{
-  font:600 1.5rem 'Playfair Display',serif;
-  margin-bottom:10px;
-}
-.project p{color:var(--muted);font-size:.94rem}
-.project-label{
-  display:inline-block;margin-bottom:12px;
-  color:#b57884;font-size:.75rem;
-  letter-spacing:1px;font-weight:700;
-  text-transform:uppercase;
-}
-.project-link{
-  display:inline-block;margin-top:18px;
-  text-decoration:none;font-weight:700;
-  color:#b57884;
-}
-.project-link:hover{text-decoration:underline}
 
-.philosophy{
-  background:linear-gradient(135deg,#f4d9da,#faeadd);
-  border-radius:28px;text-align:center;
-  padding:55px 30px;
-}
-.philosophy blockquote{
-  max-width:700px;margin:15px auto;
-  font:italic 1.6rem 'Playfair Display',serif;
-  color:#72575c;
-}
-.philosophy p{color:#806d70}
+.buttons { margin-top: 35px; }
 
-.future{
-  text-align:center;
-  background:#49383b;color:white;
-  border-radius:28px;padding:55px 30px;
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 6px;
+  font-weight: 600;
+  transition: .3s;
 }
-.future h2{
-  font:700 2.4rem 'Playfair Display',serif;
-}
-.future p{max-width:670px;margin:15px auto;color:#e8d9da}
 
-.fun-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:15px;
+.primary {
+  background: var(--rose);
+  color: white;
 }
-.fun{
-  text-align:center;padding:23px 15px;
-  border-radius:18px;background:white;
-  border:1px solid var(--line);
-}
-.fun div{font-size:1.8rem}
-.fun p{font-size:.9rem;color:var(--muted);margin-top:8px}
 
-footer{
-  text-align:center;padding:35px 15px;
-  background:#49383b;color:#f8e9e5;font-size:.9rem;
+.secondary {
+  border: 1px solid #d9b9b9;
+  color: var(--dark);
+  background: white;
 }
-footer span{color:#e9aeb9}
 
-@media(max-width:750px){
-  nav{padding:14px 5%;flex-direction:column}
-  .nav-links{justify-content:center;gap:13px}
-  .nav-links a{font-size:.75rem}
-  header{min-height:75vh;padding:65px 5%}
-  section{padding:65px 5%}
-  .about,.skills,.projects,.exploring,.fun-grid{grid-template-columns:1fr}
-  .journey{margin-left:10px}
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px #d88f9b35;
+}
+
+.decoration {
+  position: absolute;
+  border-radius: 50%;
+  background: #e8b9bd;
+  opacity: .35;
+  animation: float 6s ease-in-out infinite;
+}
+
+.circle-one {
+  width: 130px;
+  height: 130px;
+  top: 15%;
+  left: 8%;
+}
+
+.circle-two {
+  width: 80px;
+  height: 80px;
+  bottom: 13%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title small {
+  color: var(--rose);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 8px 0;
+}
+
+.section-title p { color: var(--muted); }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 35px;
+  background: white;
+  border: 1px solid #f0e3df;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px #76514c0b;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px #76514c17;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p { color: var(--muted); }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.skill {
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #f1e2df;
+  transition: .3s;
+}
+
+.skill:hover {
+  background: #fbe9e8;
+  transform: translateY(-5px);
+}
+
+.skill strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.skill span {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.goal {
+  text-align: center;
+  padding: 65px 35px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f3d8d9, #f9e9dc);
+}
+
+.goal h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+}
+
+.goal p {
+  max-width: 680px;
+  margin: 15px auto 0;
+  color: #705b5e;
+}
+
+.game-card {
+  text-align: center;
+  background: white;
+  padding: 45px 25px;
+  border-radius: 28px;
+  border: 1px solid #f0dfda;
+  box-shadow: 0 12px 35px #76514c0b;
+}
+
+.game-icon { font-size: 3rem; }
+
+.game-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 12px 0;
+}
+
+.game-card p { color: var(--muted); }
+
+.game-buttons { margin-top: 22px; }
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #49393c;
+  color: #f8e9e5;
+}
+
+footer span { color: #e7aeb4; }
+
+@media (max-width: 750px) {
+  nav { padding: 15px 5%; }
+  nav div:last-child {
+    display: flex;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0;
+    font-size: .78rem;
+  }
+  .logo { font-size: 1.15rem; }
+  header { min-height: 75vh; padding: 70px 5%; }
+  section { padding: 65px 5%; }
+  .about, .skills { grid-template-columns: 1fr; }
+  .card { padding: 27px; }
+}
+
+@media (max-width: 380px) {
+  nav { flex-wrap: wrap; gap: 12px; }
+  nav div:last-child { width: 100%; justify-content: space-between; }
 }
 </style>
 </head>
@@ -246,290 +340,640 @@ footer span{color:#e9aeb9}
 
 <nav>
   <div class="logo">Amisha<span>.</span></div>
-  <div class="nav-links">
+  <div>
     <a href="#about">About</a>
-    <a href="#journey">Journey</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#future">Future</a>
+    <a href="#goals">Goals</a>
+    <a href="#game">Projects</a>
   </div>
 </nav>
 
 <header>
-  <div class="decor d1"></div>
-  <div class="decor d2"></div>
+  <div class="decoration circle-one"></div>
+  <div class="decoration circle-two"></div>
 
   <div class="hero">
-    <div class="tag">✿ Welcome to my little world</div>
+    <div class="tag">✿ Welcome to my portfolio</div>
+
     <h1>Hi, I'm <span>Amisha.</span></h1>
+
     <h2>IBM Student · Dong-A University</h2>
+
     <p>
-      A curious mind with a creative perspective.
-      I enjoy discovering new ideas, learning useful skills,
-      and exploring the connection between business,
-      technology, and people.
+      A curious learner, creative thinker, and future professional.
+      I enjoy exploring new ideas, developing useful skills,
+      and turning every learning experience into an opportunity to grow.
     </p>
+
     <div class="buttons">
-      <a href="#about" class="btn primary">Discover My Story ↗</a>
-      <a href="#projects" class="btn secondary">Explore My Work</a>
+      <a class="btn primary" href="#about">Explore My World ↗</a>
+      <a class="btn secondary" href="#game">Discover My Project</a>
     </div>
   </div>
 </header>
 
 <section id="about">
-  <div class="heading">
-    <small>01 · Introduction</small>
-    <h2>More Than Just a Student</h2>
-    <p>A little introduction to the person behind this portfolio.</p>
+  <div class="section-title">
+    <small>Get to know me</small>
+    <h2>A Little About Me</h2>
+    <p>Every journey begins with curiosity.</p>
   </div>
 
   <div class="about">
     <div class="card">
-      <h3>🎓 My Education</h3>
+      <h3>🎓 Education</h3>
       <p>
-        I am studying International Business Management (IBM)
-        at Dong-A University. Through my studies, I am exploring
-        business, technology, communication, and the importance
-        of understanding the world around us.
+        I am an IBM (International Business Management) student at
+        Dong-A University. I am interested in learning about business,
+        technology, communication, and the skills needed for the future.
       </p>
     </div>
+
     <div class="card">
-      <h3>🌷 Who I Am</h3>
+      <h3>🌷 My Personality</h3>
       <p>
-        I consider myself a curious and open-minded learner.
-        I enjoy trying new things, learning from different
-        experiences, and improving myself one step at a time.
-        I believe every challenge can teach me something valuable.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="journey">
-  <div class="heading">
-    <small>02 · My Story</small>
-    <h2>My Learning Journey</h2>
-    <p>Every experience is another step towards growth.</p>
-  </div>
-
-  <div class="journey">
-    <div class="journey-item">
-      <h3>A New Learning Chapter</h3>
-      <p>
-        Beginning my university journey at Dong-A University
-        has given me opportunities to explore new subjects,
-        meet different perspectives, and become more independent.
-      </p>
-    </div>
-    <div class="journey-item">
-      <h3>Discovering Business & Technology</h3>
-      <p>
-        Through International Business Management, I am
-        developing an interest in how business ideas,
-        digital tools, and information work together.
-      </p>
-    </div>
-    <div class="journey-item">
-      <h3>Learning Through Projects</h3>
-      <p>
-        I enjoy applying what I learn through creative and
-        academic projects. These experiences help me practise
-        problem-solving, research, organization, and creativity.
-      </p>
-    </div>
-    <div class="journey-item">
-      <h3>Looking Ahead</h3>
-      <p>
-        I want to continue discovering my strengths,
-        improving my abilities, and building a future
-        through meaningful learning experiences.
+        I am curious and open to learning. I like trying new things,
+        improving myself step by step, and gaining practical experience
+        from new challenges.
       </p>
     </div>
   </div>
 </section>
 
 <section id="skills">
-  <div class="heading">
-    <small>03 · Personal Development</small>
-    <h2>Skills & Strengths</h2>
-    <p>Abilities I am developing through learning and experience.</p>
+  <div class="section-title">
+    <small>What I am learning</small>
+    <h2>My Skills & Interests</h2>
+    <p>Little improvements make a big difference.</p>
   </div>
 
   <div class="skills">
     <div class="skill">
       <strong>💬 Communication</strong>
-      <span>Connecting with people and expressing ideas clearly.</span>
+      <span>Enjoy communicating and connecting with people.</span>
     </div>
+
     <div class="skill">
-      <strong>⌨️ Writing & Organization</strong>
-      <span>Organizing information and presenting ideas in a clear way.</span>
+      <strong>⌨️ Typing & Writing</strong>
+      <span>Comfortable with typing, writing, and organizing information.</span>
     </div>
+
     <div class="skill">
       <strong>🌏 Language Learning</strong>
-      <span>Exploring languages and developing cross-cultural communication.</span>
+      <span>Interested in learning languages and improving communication skills.</span>
     </div>
+
     <div class="skill">
       <strong>💡 Creativity</strong>
-      <span>Exploring new ideas and finding different approaches.</span>
+      <span>Enjoy creating ideas and exploring different ways to solve problems.</span>
     </div>
+
     <div class="skill">
       <strong>🔄 Adaptability</strong>
-      <span>Adjusting to new environments and learning situations.</span>
+      <span>Willing to learn and adapt to new environments and situations.</span>
     </div>
+
     <div class="skill">
       <strong>🧩 Problem Solving</strong>
-      <span>Thinking carefully and looking for practical solutions.</span>
+      <span>Like finding practical solutions and learning from challenges.</span>
     </div>
   </div>
 </section>
 
-<section id="exploring">
-  <div class="heading">
-    <small>04 · My Interests</small>
-    <h2>What I Am Exploring</h2>
-    <p>Subjects and ideas that inspire my curiosity.</p>
-  </div>
-
-  <div class="exploring">
-    <div class="card">
-      <h3>📊 Data & Information</h3>
-      <p>
-        Exploring how data can be collected, organized,
-        analyzed, and transformed into useful information
-        for better understanding and decision-making.
-      </p>
-    </div>
-    <div class="card">
-      <h3>🌐 Business & Technology</h3>
-      <p>
-        Learning how digital technology and business
-        connect, and how new ideas can create value
-        in an increasingly connected world.
-      </p>
-    </div>
-    <div class="card">
-      <h3>🗣️ Languages & Culture</h3>
-      <p>
-        Interested in language learning, cultural
-        experiences, and understanding different
-        ways of communicating and thinking.
-      </p>
-    </div>
-    <div class="card">
-      <h3>🎨 Creative Thinking</h3>
-      <p>
-        Enjoying creative projects, exploring ideas,
-        and discovering how imagination can be
-        combined with practical skills.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="heading">
-    <small>05 · My Work</small>
-    <h2>Projects & Experiences</h2>
-    <p>A collection of things I have explored and created.</p>
-  </div>
-
-  <div class="project-grid">
-
-    <div class="project">
-      <div class="project-visual visual-one">☕</div>
-      <span class="project-label">Creative Project</span>
-      <h3>Amisha's Cafe Rush</h3>
-      <p>
-        A cafe management game project that brings
-        creativity and interactive learning together.
-        Explore the cafe experience through my game.
-      </p>
-      <a class="project-link" href="amisha-cafe-rush.html">
-        Play the Game ↗
-      </a>
-      <br>
-      <a class="project-link"
-         href="https://docs.google.com/document/d/1e-YP0b5t8Y11buD0WZVv5inSkvaVZTJgb8yIjPLOrsw/edit?usp=sharing"
-         target="_blank" rel="noopener noreferrer">
-        Read Story & Rules ↗
-      </a>
-    </div>
-
-    <div class="project">
-      <div class="project-visual visual-two">📊</div>
-      <span class="project-label">Academic Project</span>
-      <h3>Data Detectives</h3>
-      <p>
-        An academic data exploration project focused
-        on understanding datasets, identifying unusual
-        records, organizing information, and discovering
-        meaningful patterns through analysis.
-      </p>
-      <span class="project-link">Learning through data analysis ✦</span>
-    </div>
-
-  </div>
-</section>
-
-<section id="philosophy">
-  <div class="heading">
-    <small>06 · My Mindset</small>
-    <h2>What I Believe In</h2>
-  </div>
-
-  <div class="philosophy">
-    <div style="font-size:2rem">✿</div>
-    <blockquote>
-      "I believe growth is not about knowing everything.
-      It is about staying curious, being willing to learn,
-      and becoming better with every experience."
-    </blockquote>
-    <p>My personal learning philosophy</p>
-  </div>
-</section>
-
-<section id="future">
-  <div class="future">
-    <h2>My Future Vision ✨</h2>
+<section id="goals">
+  <div class="goal">
+    <h2>My Goals ✨</h2>
     <p>
-      I hope to build a future where I can combine my knowledge
-      of business, technology, communication, and creativity.
-      I want to become a confident and adaptable professional
-      who can contribute meaningful ideas, work with different
-      people, and continue learning throughout life.
+      My goal is to keep learning new things, build useful skills,
+      gain meaningful experiences, and grow both personally and
+      professionally. I want to stay curious and make the most of
+      every opportunity to learn.
     </p>
   </div>
 </section>
 
-<section id="personal">
-  <div class="heading">
-    <small>07 · Beyond Academics</small>
-    <h2>A Few More Things About Me</h2>
-    <p>Because a portfolio should show the person, not just the student.</p>
+<section id="game">
+  <div class="section-title">
+    <small>Something I created</small>
+    <h2>My Creative Project</h2>
+    <p>Learning can be creative and fun!</p>
   </div>
 
-  <div class="fun-grid">
-    <div class="fun">
-      <div>🌷</div>
-      <strong>Always Learning</strong>
-      <p>I enjoy discovering something new.</p>
-    </div>
-    <div class="fun">
-      <div>🌏</div>
-      <strong>Culture Explorer</strong>
-      <p>I am interested in languages and different cultures.</p>
-    </div>
-    <div class="fun">
-      <div>💭</div>
-      <strong>Creative Mind</strong>
-      <p>I like exploring ideas and possibilities.</p>
+  <div class="game-card">
+    <div class="game-icon">☕</div>
+    <h2>Amisha's Cafe Rush</h2>
+    <p>
+      Welcome to my little cafe! Explore my cafe management game
+      and discover a project that combines creativity and fun.
+    </p>
+
+    <div class="game-buttons">
+      <a class="btn primary" href="amisha-cafe-rush.html">
+        🎮 Play My Game
+      </a>
+
+      <a class="btn secondary"
+         href="https://docs.google.com/document/d/1e-YP0b5t8Y11buD0WZVv5inSkvaVZTJgb8yIjPLOrsw/edit?usp=sharing"
+         target="_blank" rel="noopener noreferrer">
+        📖 Game Story & Rules
+      </a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Designed with <span>♥</span> by Amisha Lama</p>
-  <p>© 2026 · Learning, Creating & Growing</p>
+  <p>Made with <span>♥</span> by Amisha Lama</p>
+  <p>© 2026 · My Creative Student Portfolio</p>
+</footer>
+
+</body>
+</html>
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amisha Lama | Creative Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #fffaf3;
+  --pink: #f4d9d9;
+  --rose: #d88f9b;
+  --dark: #443638;
+  --muted: #857477;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 17px 8%;
+  background: rgba(255,250,243,.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #f0e5df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span { color: var(--rose); }
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 25px;
+  font-size: .9rem;
+  transition: .3s;
+}
+
+nav a:hover { color: var(--rose); }
+
+header {
+  min-height: 88vh;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, #f6dddd 0, transparent 30%),
+    radial-gradient(circle at 85% 75%, #f3e5d8 0, transparent 32%),
+    var(--cream);
+}
+
+.hero {
+  max-width: 850px;
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 19px;
+  background: white;
+  border: 1px solid #efd4d5;
+  border-radius: 50px;
+  color: #b97884;
+  font-size: .85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: var(--rose);
+  font-style: italic;
+}
+
+.hero h2 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.buttons { margin-top: 35px; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 6px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.primary {
+  background: var(--rose);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #d9b9b9;
+  color: var(--dark);
+  background: white;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px #d88f9b35;
+}
+
+.decoration {
+  position: absolute;
+  border-radius: 50%;
+  background: #e8b9bd;
+  opacity: .35;
+  animation: float 6s ease-in-out infinite;
+}
+
+.circle-one {
+  width: 130px;
+  height: 130px;
+  top: 15%;
+  left: 8%;
+}
+
+.circle-two {
+  width: 80px;
+  height: 80px;
+  bottom: 13%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title small {
+  color: var(--rose);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 8px 0;
+}
+
+.section-title p { color: var(--muted); }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 35px;
+  background: white;
+  border: 1px solid #f0e3df;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px #76514c0b;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px #76514c17;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p { color: var(--muted); }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.skill {
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #f1e2df;
+  transition: .3s;
+}
+
+.skill:hover {
+  background: #fbe9e8;
+  transform: translateY(-5px);
+}
+
+.skill strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.skill span {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.goal {
+  text-align: center;
+  padding: 65px 35px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f3d8d9, #f9e9dc);
+}
+
+.goal h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+}
+
+.goal p {
+  max-width: 680px;
+  margin: 15px auto 0;
+  color: #705b5e;
+}
+
+.game-card {
+  text-align: center;
+  background: white;
+  padding: 45px 25px;
+  border-radius: 28px;
+  border: 1px solid #f0dfda;
+  box-shadow: 0 12px 35px #76514c0b;
+}
+
+.game-icon { font-size: 3rem; }
+
+.game-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 12px 0;
+}
+
+.game-card p { color: var(--muted); }
+
+.game-buttons { margin-top: 22px; }
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #49393c;
+  color: #f8e9e5;
+}
+
+footer span { color: #e7aeb4; }
+
+@media (max-width: 750px) {
+  nav { padding: 15px 5%; }
+  nav div:last-child {
+    display: flex;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0;
+    font-size: .78rem;
+  }
+  .logo { font-size: 1.15rem; }
+  header { min-height: 75vh; padding: 70px 5%; }
+  section { padding: 65px 5%; }
+  .about, .skills { grid-template-columns: 1fr; }
+  .card { padding: 27px; }
+}
+
+@media (max-width: 380px) {
+  nav { flex-wrap: wrap; gap: 12px; }
+  nav div:last-child { width: 100%; justify-content: space-between; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Amisha<span>.</span></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#goals">Goals</a>
+    <a href="#game">Projects</a>
+  </div>
+</nav>
+
+<header>
+  <div class="decoration circle-one"></div>
+  <div class="decoration circle-two"></div>
+
+  <div class="hero">
+    <div class="tag">✿ Welcome to my portfolio</div>
+
+    <h1>Hi, I'm <span>Amisha.</span></h1>
+
+    <h2>IBM Student · Dong-A University</h2>
+
+    <p>
+      A curious learner, creative thinker, and future professional.
+      I enjoy exploring new ideas, developing useful skills,
+      and turning every learning experience into an opportunity to grow.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#about">Explore My World ↗</a>
+      <a class="btn secondary" href="#game">Discover My Project</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-title">
+    <small>Get to know me</small>
+    <h2>A Little About Me</h2>
+    <p>Every journey begins with curiosity.</p>
+  </div>
+
+  <div class="about">
+    <div class="card">
+      <h3>🎓 Education</h3>
+      <p>
+        I am an IBM (International Business Management) student at
+        Dong-A University. I am interested in learning about business,
+        technology, communication, and the skills needed for the future.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🌷 My Personality</h3>
+      <p>
+        I am curious and open to learning. I like trying new things,
+        improving myself step by step, and gaining practical experience
+        from new challenges.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-title">
+    <small>What I am learning</small>
+    <h2>My Skills & Interests</h2>
+    <p>Little improvements make a big difference.</p>
+  </div>
+
+  <div class="skills">
+    <div class="skill">
+      <strong>💬 Communication</strong>
+      <span>Enjoy communicating and connecting with people.</span>
+    </div>
+
+    <div class="skill">
+      <strong>⌨️ Typing & Writing</strong>
+      <span>Comfortable with typing, writing, and organizing information.</span>
+    </div>
+
+    <div class="skill">
+      <strong>🌏 Language Learning</strong>
+      <span>Interested in learning languages and improving communication skills.</span>
+    </div>
+
+    <div class="skill">
+      <strong>💡 Creativity</strong>
+      <span>Enjoy creating ideas and exploring different ways to solve problems.</span>
+    </div>
+
+    <div class="skill">
+      <strong>🔄 Adaptability</strong>
+      <span>Willing to learn and adapt to new environments and situations.</span>
+    </div>
+
+    <div class="skill">
+      <strong>🧩 Problem Solving</strong>
+      <span>Like finding practical solutions and learning from challenges.</span>
+    </div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="goal">
+    <h2>My Goals ✨</h2>
+    <p>
+      My goal is to keep learning new things, build useful skills,
+      gain meaningful experiences, and grow both personally and
+      professionally. I want to stay curious and make the most of
+      every opportunity to learn.
+    </p>
+  </div>
+</section>
+
+<section id="game">
+  <div class="section-title">
+    <small>Something I created</small>
+    <h2>My Creative Project</h2>
+    <p>Learning can be creative and fun!</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">☕</div>
+    <h2>Amisha's Cafe Rush</h2>
+    <p>
+      Welcome to my little cafe! Explore my cafe management game
+      and discover a project that combines creativity and fun.
+    </p>
+
+    <div class="game-buttons">
+      <a class="btn primary" href="amisha-cafe-rush.html">
+        🎮 Play My Game
+      </a>
+
+      <a class="btn secondary"
+         href="https://docs.google.com/document/d/1e-YP0b5t8Y11buD0WZVv5inSkvaVZTJgb8yIjPLOrsw/edit?usp=sharing"
+         target="_blank" rel="noopener noreferrer">
+        📖 Game Story & Rules
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Made with <span>♥</span> by Amisha Lama</p>
+  <p>© 2026 · My Creative Student Portfolio</p>
 </footer>
 
 </body>
